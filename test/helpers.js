@@ -14,6 +14,13 @@ const babelResult = babel.transformFileSync(
   }
 );
 
+// describe('Module loading', function () {
+//     it('should load', function(done){
+//         expect(module.default).to.not.be.undefined;
+//         done();
+//     });
+// });
+
 const src = babelResult.code
 
 jsdom({
